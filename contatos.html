@@ -10,29 +10,28 @@
 </head>
 
 <body>
+    <header>
+
+        <h1>Skate POA</h1>
+
+    </header>
+
+
+    <nav>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="fotos.html">Fotos</a></li> 
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+        </ul>	
+    </nav>
 	<div id="container">
 		
 
-		<header>
 
-			<h1>Skate POA</h1>
-
-		</header>
-
-
-		<nav>
-
-			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="equipe.html">Equipe</a></li>
-				<li><a href="eventos.html">Eventos</a></li>
-				<li><a href="fotos.html">Fotos</a></li> 
-				<li><a href="videos.html">Videos</a></li>
-				<li><a href="social.html">Social</a></li> 
-				<li><a href="contatos.html">Contato</a></li>
-				<li><a href="contato2.html">Contato2</a></li>  	
-			</ul>	
-		</nav>
 
 
 		<main>
@@ -67,7 +66,46 @@
 					<input type="tel" name="telefone">
 					<br><br>
 
+                    <h3>Dados:</h3>
+                    <br>
 				
+
+					<label for="cidades">Estados:</label>
+					<select id="cidades" name="cidades">
+						<option value="">Selecione...</option>
+						<optgroup label="Rio Grande do Sul">
+							<option value="PFD">Passo Fundo</option>
+							<option value="PEL">Pelotas</option>
+							<option value="POA">Porto Alegre</option>
+							<option value="VIA">Viamão</option>
+							<option value="GRA">Gravataí</option>
+							<option value="ALV">Alvorada</option>
+							<option value="CAN">Canoas</option>
+							<option value="CAX">Caxias</option>
+						</optgroup>		
+						<optgroup label="Santa Catarina">
+							<option value="CHA">Chapecó</option>
+							<option value="FLO">Florianópolis</option>
+							<option value="JOA">Joaçaba</option>
+						</optgroup>
+						<optgroup label="Paraná">	
+							<option value="CUR">Curitiba</option>
+							<option value="CAS">Cascavel</option>
+						</optgroup>
+					</select>
+					<br><br>
+					<label for="endereço">Endereço (Rua, número e complemento):</label>
+					<input type="text" name="endereço">
+					<br><br>
+
+					<label for="arquivo">Faça o upload de seu video ou foto aqui:</label><br>
+					<input type="file" id="arquivo" name="arquivo">
+					<br><br>
+					
+					<label for="mens">Mensagem:</label>
+					<br>
+					
+					<textarea id="descricao" name="descricao" cols="50" rows="5" maxlength="140"></textarea>
 				</form>
 				<br><br>
 			</section>				
